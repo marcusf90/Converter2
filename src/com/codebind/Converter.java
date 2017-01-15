@@ -2,44 +2,13 @@ package com.codebind;
 
 public class Converter {
 
+    private String s;
+
+    //public Converter(int i) {
+    //}
 
     public static void main(String[] args) {
 
-
-        // Hex to Dec und umgekehrt
-
-/*
-        System.out.println("Eingabe hexadezimalzahl:");
-        System.out.println("Berechnung Hexadezimal zu Dezimal:" + decToHex() + ".");
-
-
-
-        System.out.println("Eingabe Dezimalzahl:");
-        System.out.println("Berechnung Dezimal zu Hexadezimal:" + hexToDec() + ".");
-
-
-
-        // Binär zu Hexadezimal
-
-        System.out.println("Eingabe Binär:");
-        System.out.println("Berechnung Binär zu Hexadezimal " + binToHex() + ".");
-
-
-        // Hexadezimal zu Binär
-
-        System.out.println("Eingabe Hexadezimal:");
-        System.out.println("Berechnung Hexadezimal zu Binär: " + hexToBin() + ".");
-
-        // Binär zu Dezimal
-
-        System.out.println("Berechnung Binär zu Dezimal:");
-        System.out.println("Berechnung Binär zu Dezimal: " + binToDec() + ".");
-
-        // Dezimal zu Binär
-        System.out.println("Berechnung Dezimal zu Binär:");
-        System.out.println("Berechnung Dezimal zu Binär: " + decToBin() + ".");
-
-*/
     }
 
     public static String decToHex(String s)

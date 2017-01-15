@@ -23,6 +23,7 @@ public class GUI extends JFrame {
     private JTextField test;
     private JLabel hexadecimalLabel;
     private JLabel title;
+    private JLabel subtitle;
     /*private Converter conf = new Converter();*/
 
 
@@ -49,7 +50,7 @@ public class GUI extends JFrame {
 
 
     private void initWindow(){
-        fehlermeldung = new JLabel("Du bist ein Stück Schlamm!!!");
+        fehlermeldung = new JLabel("Falsche Eingabe!");
         fehlermeldung.setVisible(false);
         buttonCheckDec = new JButton("Convert");
         buttonCheckHex = new JButton("Convert");
@@ -62,8 +63,8 @@ public class GUI extends JFrame {
         decimalLabel = new JLabel("Dezimalwert:");
         binaryLabel = new JLabel("Binärwert:");
         hexadecimalLabel = new JLabel("Hexadezimalwert:");
-        title = new JLabel("Konverter - Hex - Binär - Dezimal");
-
+        title = new JLabel("Konverter");
+        subtitle = new JLabel("Hex - Binär - Dezimal");
 
 
 
@@ -154,9 +155,11 @@ public class GUI extends JFrame {
         reset.setBounds(150,400,100,20);
         this.getContentPane().add(reset);
 
-        fehlermeldung.setBounds(250,50,300,20);
+        fehlermeldung.setBounds(150,100,300,20);
         this.getContentPane().add(fehlermeldung);
-        //setBounds(x,y,width,
+        fehlermeldung.setFont(new java.awt.Font("Arial", Font.ITALIC | Font.BOLD, 12));
+        fehlermeldung.setForeground(Color.RED);
+
 
         hexaInput.setBounds(150,350,100,20);
         this.getContentPane().add(hexaInput);
@@ -177,9 +180,15 @@ public class GUI extends JFrame {
         hexadecimalLabel.setBounds(20,350,150,20);
         this.getContentPane().add(hexadecimalLabel);
 
-        title.setBounds(150,20,400,50);
+        title.setBounds(170,20,400,50);
         this.getContentPane().add(title);
-        title.setFont(Font.getFont("Arial"));
+        title.setFont(new java.awt.Font("Arial", Font.ITALIC | Font.BOLD, 20));
+        title.setForeground(Color.BLUE);
+
+        subtitle.setBounds(150,50,400,50);
+        this.getContentPane().add(subtitle);
+        subtitle.setFont(new java.awt.Font("Arial", Font.ITALIC | Font.BOLD, 16));
+        subtitle.setForeground(Color.BLUE);
 
         test.setBounds(150,250,100,20);
         this.getContentPane().add(test);
