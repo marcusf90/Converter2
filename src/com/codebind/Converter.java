@@ -2,15 +2,10 @@ package com.codebind;
 
 public class Converter {
 
-    private String s;
 
     public static void main(String[] args) {
 
     }
-
-
-   // public Converter() {     this.s = hexToBin(s);    }
-
 
     public static String decToHex(String s)
     {
