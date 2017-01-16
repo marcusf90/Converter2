@@ -4,12 +4,13 @@ public class Converter {
 
     private String s;
 
-    //public Converter(int i) {
-    //}
-
     public static void main(String[] args) {
 
     }
+
+
+   // public Converter() {     this.s = hexToBin(s);    }
+
 
     public static String decToHex(String s)
     {

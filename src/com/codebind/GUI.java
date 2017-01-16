@@ -24,25 +24,15 @@ public class GUI extends JFrame {
     private JLabel hexadecimalLabel;
     private JLabel title;
     private JLabel subtitle;
-    /*private Converter conf = new Converter();*/
 
 
 
     public GUI() {
 
         this.setTitle("Converter");
-
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-
         this.pack();
         this.setVisible(true);
-
-      /*this.addWindowListener(new WindowListener()
-        {
-
-                public void windowClosing(WindowEvent e) { System.exit(0); }
-        });
-        */
         this.initWindow();
     }
 
@@ -57,9 +47,9 @@ public class GUI extends JFrame {
         buttonCheckBin = new JButton("Convert");
         reset = new JButton("Reset!");
         test = new JTextField("");
-        decimalInput = new JTextField("Bitte eingeben...");
-        binaryInput = new JTextField("Bitte eingeben...");
-        hexaInput = new JTextField("Bitte eingeben...");
+        decimalInput = new JTextField("");
+        binaryInput = new JTextField("");
+        hexaInput = new JTextField("");
         decimalLabel = new JLabel("Dezimalwert:");
         binaryLabel = new JLabel("Binärwert:");
         hexadecimalLabel = new JLabel("Hexadezimalwert:");
@@ -202,9 +192,7 @@ public class GUI extends JFrame {
 
 
 
-//        decimalLabel.setFont(new Font("Arial", Font.BOLD, 20));
-       // buttonCheckHex.setFont(new Font("Arial", Font.BOLD, 10));
-        // buttonCheckHex.setFont(new Font("Arial", Font.BOLD, 10));
+
     }
 }
 
